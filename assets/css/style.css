@@ -1,0 +1,668 @@
+ body {
+     font-family: 'Open Sans', sans-serif;
+     /* Example font */
+     color: #333;
+ }
+
+ /* 
+ .container {
+     max-width: 1400px !important;
+ } */
+
+ .bg-primary-rdc {
+     /* Custom primary color if needed */
+     background-color: #004d9c !important;
+     /* Example blue */
+ }
+
+ header {
+     position: absolute;
+     width: 90%;
+     z-index: 1;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 10px;
+
+     left: 0;
+     right: 0;
+     margin: 20px auto;
+ }
+
+
+ nav .navbar-nav>.nav-item a {
+     padding: 0 !important;
+     margin: 0 !important;
+     color: rgba(0, 0, 0, 0.5);
+ }
+
+
+
+ nav .navbar-nav>.nav-item {
+     padding-left: 60px;
+ }
+
+ nav .navbar-nav>.nav-item:last-child {
+     padding-right: 30px;
+ }
+
+ .text-primary-rdc {
+     color: #004d9c !important;
+ }
+
+ .btn-primary-rdc {
+     background-color: #0052CC;
+     border-color: #0052CC;
+     color: #fff;
+     padding: 10px 30px;
+     border-radius: 4px;
+     font-weight: 500;
+ }
+
+ .btn-primary-rdc:hover {
+     background-color: #003a7a;
+     border-color: #003a7a;
+ }
+
+ .section-heading {
+     font-size: 2.5rem;
+     font-weight: 500 !important;
+     text-align: center;
+     margin-bottom: 20px;
+     color: #333;
+ }
+
+ .section-subheading {
+     font-size: 1.1rem;
+     text-align: center;
+     max-width: 800px;
+     margin: 0 auto 50px auto;
+     color: #555;
+ }
+
+ .hero-section {
+     position: relative;
+     color: #000;
+     top: 0;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     padding-top: 120px;
+     /* Adjust as needed for spacing below navbar */
+     padding-bottom: 0;
+     width: 100%;
+     height: 100vh;
+     padding: 0 92px;
+ }
+
+ /* .hero-section::after {
+     content: "";
+     top: 0;
+     position: absolute;
+     background-size: cover;
+     background-position: center;
+     background: linear-gradient(0deg, rgba(0, 82, 204, 0.05), rgba(0, 82, 204, 0.05)),
+         linear-gradient(192.36deg, rgba(0, 42, 103, 0) 53.78%, rgba(0, 42, 103, 0.5) 96.82%);
+
+     width: 100%;
+     height: 100%;
+ }
+
+ .hero-section::before {
+     content: "";
+     top: 0;
+     position: absolute;
+     background-size: cover;
+     background-position: center;
+     background-image: url("../img/hand-image.png");
+     width: 100%;
+     height: 100%;
+
+ } */
+
+ .hero-section h1 {
+     font-size: 64px;
+     color: #002A67;
+     font-weight: 500 !important;
+     line-height: 1.1;
+ }
+
+ .hero-section p.lead {
+     font-size: 1.25rem;
+     max-width: 500px;
+     color: #002A67;
+     letter-spacing: 0.5px;
+ }
+
+ .hero-section .fa-2x {
+     color: #fff;
+     /* White icons */
+ }
+
+ .hero-section h5 {
+     font-size: 17px;
+     color: rgb(255 255 255 / 80%);
+ }
+
+ .about-section {
+
+     /* Light grey background for the section */
+     padding-top: 80px;
+     padding-bottom: 80px;
+ }
+
+ .about-section .shadow-sm {
+     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+     /* Bootstrap default shadow */
+ }
+
+ .about-section h2 {
+     color: #333;
+ }
+
+ .about-section h3 {
+     font-size: 40px;
+ }
+
+ .about-section .row.text-white {
+     background-color: #004d9c;
+     /* Matching your blue color */
+ }
+
+ .about-section .row.text-white .border-light {
+     border-color: rgba(255, 255, 255, 0.3) !important;
+     /* Lighter border for stats */
+ }
+
+ .z-index {
+     position: relative;
+     z-index: 1;
+ }
+
+ /* Responsive adjustments for hero section */
+ @media (max-width: 768px) {
+     .hero-section h1 {
+         font-size: 2.5rem;
+     }
+
+     .hero-section p.lead {
+         font-size: 1rem;
+     }
+ }
+
+ /* style.css */
+
+ /* Custom Colors */
+ :root {
+     --rdc-blue-dark: #0052CC;
+     /* Footer and Contact form background */
+     --rdc-blue-primary: #0052CC;
+     /* Main buttons and Hero overlay */
+     --rdc-blue-light: #e6f0ff;
+     /* Light blue background for sections/blocks */
+     --rdc-text-secondary: #000000;
+     /* Light grey/blue text */
+     --rdc-border-light: #ddd;
+ }
+
+ /* Re-defining Bootstrap Utilities with custom colors */
+ .bg-primary-rdc {
+     background-color: var(--rdc-blue-primary) !important;
+ }
+
+ .text-primary-rdc {
+     color: var(--rdc-blue-primary) !important;
+ }
+
+ .btn-primary-rdc {
+     background-color: var(--rdc-blue-primary);
+     border-color: var(--rdc-blue-primary);
+     padding: 10px 30px;
+     font-weight: 600;
+ }
+
+ .btn-primary-rdc:hover {
+     background-color: #003a7a;
+     border-color: #003a7a;
+ }
+
+ .section-heading {
+     font-size: 2.5rem;
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 20px;
+     color: #333;
+ }
+
+ .section-subheading {
+     font-size: 14px;
+     text-align: center;
+     max-width: 900px;
+     margin: 0 auto 50px auto;
+     color: rgba(0, 0, 0, 0.7);
+ }
+
+ /* --- Specific Section Styles --- */
+
+ /* About Section Card Shadow */
+ .about-section .card-shadow {
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     /* Denser shadow */
+ }
+
+ /* Feature Blocks Styling (Image 2 & 3) */
+ .feature-block {
+     background-color: var(--rdc-blue-light);
+     background: linear-gradient(180deg, rgba(0, 82, 204, 0) 13.87%, rgba(0, 82, 204, 0.1) 100%);
+     border: 1px solid var(--Stroke, #0052CC1A);
+     padding: 20px;
+     border-radius: 8px;
+     min-height: 270px;
+     transition: background-color 0.3s;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+ }
+
+ .feature-block img {
+
+     width: 50px;
+ }
+
+ .feature-block h6 {
+     font-size: 20px;
+     font-weight: 600;
+     color: #002A67;
+ }
+
+ .feature-block p {
+     font-size: 0.9rem;
+     color: #002A67;
+ }
+
+ /* Product Card Styling (Image 2 & 3) */
+ .product-card-body {
+
+     padding: 15px;
+ }
+
+ .product-card .img-container {
+
+     /* White background for image area */
+
+     display: flex;
+
+     align-items: center;
+
+     justify-content: center;
+
+     height: 390px;
+     /* Consistent height for product image area */
+
+     overflow: hidden;
+
+     width: 100%;
+
+     background: #fff;
+ }
+
+ .product-card .img-container img {
+     max-height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+ .product-info-text {
+     font-size: 0.9rem;
+     line-height: 1.3;
+     min-height: 3em;
+     /* To keep card height consistent */
+ }
+
+ .price-tag {
+     font-size: 1.1rem;
+     font-weight: 700;
+     color: #333;
+ }
+
+ .case-price-label {
+     font-size: 0.8rem;
+     color: rgba(0, 0, 0, 0.6);
+ }
+
+ .btn-product-view {
+     padding: 11px 35px;
+     font-size: 18px;
+     border-radius: 4px;
+ }
+
+ /* Footer & Contact Section */
+ .footer-contact-section {
+     background-color: var(--rdc-blue-primary);
+     padding: 100px 0;
+ }
+
+ .footer-contact-section h2,
+ .footer-contact-section h3 {
+     font-weight: 700;
+ }
+
+ .contact-form-block {
+     background-color: var(--rdc-blue-dark);
+     /* Darker blue background */
+     padding: 40px;
+     border-radius: 5px;
+ }
+
+ .contact-form-block .form-control {
+     background-color: var(--rdc-blue-dark);
+     border: 1px solid #0056b3;
+     /* Slightly lighter border */
+     color: white;
+     margin-bottom: 15px;
+     padding: 12px;
+ }
+
+ .contact-form-block .form-control::placeholder {
+     color: rgba(255, 255, 255, 0.7);
+ }
+
+ .contact-form-block .btn-light-blue {
+     background-color: #3399ff;
+     /* Light blue button */
+     color: white;
+     font-weight: 600;
+     width: 100%;
+     padding: 10px;
+     border: none;
+     border-radius: 3px;
+ }
+
+ .footer-bottom {
+     background-color: #f8f9fa;
+     /* Light grey/white bottom footer */
+     color: var(--rdc-text-secondary);
+     padding: 20px 0;
+     font-size: 0.85rem;
+ }
+
+ .about-img {
+     height: 500px;
+ }
+
+ .about-img img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .glove-sec {
+     padding: 100px 0 10px 0 !important;
+     background: linear-gradient(180deg, #FFFFFF 0%, rgb(0, 82, 204, 0.10) 100%);
+
+ }
+
+ .micro-sec {
+     background-color: rgba(0, 82, 204, 0.03);
+ }
+
+ /* --- Custom Colors (agar aapne pehle define nahi kiye) --- */
+
+
+ /* --- Contact Section Specific Styles --- */
+
+ .contact-section-exact {
+     background-color: #f8f9fa;
+     /* Section ka overall light grey background */
+ }
+
+ .contact-card-wrapper {
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+     /* Jaisa image mein halka shadow hai */
+     border-radius: 8px;
+     /* Poore card ke liye rounded corners */
+     /* overflow: hidden; */
+     /* Corners chip-off na hon */
+     background-color: #0052CC;
+     position: relative;
+     padding: 50px 0;
+ }
+
+ .left-contact-block {
+     background-color: var(--rdc-blue-primary);
+     /* Dark blue jaisa image mein hai */
+     color: white;
+     display: flex;
+     /* Content ko align karne ke liye */
+     flex-direction: column;
+     justify-content: center;
+     /* Vertically center content */
+     padding-right: 43px !important;
+     /* Image ke mutabiq right padding */
+     padding-left: 62px !important;
+     /* Image ke mutabiq left padding */
+ }
+
+ .left-contact-block h2 {
+     font-size: 52px;
+     /* Heading size match kare */
+     line-height: 1.2;
+ }
+
+ .left-contact-block p.lead {
+     font-size: 1.1rem;
+     line-height: 1.6;
+ }
+
+ .left-contact-block i {
+     font-size: 1.4rem;
+     /* Icons ki size match kare */
+     margin-top: 5px;
+     /* Thoda sa alignment theek kare */
+ }
+
+ .left-contact-block p {
+     font-size: 0.95rem;
+     /* Address/Phone text size */
+     line-height: 1.5;
+ }
+
+ .right-contact-form-block {
+     background-color: #002A67;
+     /* Darker blue for form background */
+     padding: 46px 40px !important;
+     /* Image ke mutabiq padding */
+     height: 597px;
+     position: absolute;
+     right: 4%;
+     top: -21%;
+     border-radius: 13px;
+ }
+
+ .right-contact-form-block h3 {
+     color: white;
+     font-size: 2rem;
+     /* Heading size */
+     font-weight: 700;
+     text-align: left;
+     /* Heading left align ho */
+     margin-bottom: 30px !important;
+     /* Bottom margin */
+ }
+
+ .right-contact-form-block .form-control {
+     background-color: rgba(0 ,0, 0, 0.3);
+     /* Halka transparent white background */
+    border: 1px solid #0052CC99;
+     /* Image mein halka border hai */
+     color: white;
+     /* Text color white */
+     padding: 15px 20px;
+     /* Padding match kare */
+     border-radius: 5px;
+     /* Rounded corners */
+     font-size: 1rem;
+     margin-bottom: 20px;
+     /* Fields ke beech ki spacing */
+ }
+
+ .right-contact-form-block .form-control::placeholder {
+     color: rgba(255, 255, 255, 0.6);
+     /* Placeholder text color */
+ }
+
+ .right-contact-form-block textarea.form-control {
+     min-height: 120px;
+     /* Textarea ki height */
+     resize: vertical;
+     /* User resize kar sake */
+ }
+
+ .btn-submit-inquiry {
+     background-color: #0052CC;
+     /* Light blue button */
+     color: white;
+     font-weight: 600;
+     width: 50%;
+     /* Poora width le */
+     padding: 15px;
+     /* Button padding */
+     border: none;
+     border-radius: 5px;
+     font-size: 1.1rem;
+     transition: background-color 0.3s ease;
+     margin: 0 auto !important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .btn-submit-inquiry:hover {
+     background-color: #007bff;
+     /* Hover effect */
+     color: white;
+ }
+
+ /* --- Responsive Adjustments --- */
+ @media (max-width: 991.98px) {
+
+     .left-contact-block,
+     .right-contact-form-block {
+         padding: 40px !important;
+         /* Smaller padding on smaller screens */
+     }
+
+     .left-contact-block h2 {
+         font-size: 2rem;
+     }
+
+     .right-contact-form-block h3 {
+         font-size: 1.8rem;
+     }
+ }
+
+ @media (max-width: 575.98px) {
+     .left-contact-block h2 {
+         font-size: 1.8rem;
+     }
+
+     .left-contact-block p.lead {
+         font-size: 1rem;
+     }
+ }
+ .border-right {
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+ }
+ .footer-bottom {
+    border-top:1px solid rgba(0, 0, 0, 0.2) ;
+    margin-top: 50px;
+ }
+ .footer-bottom p{
+    font-size: 17px;
+    padding:0;
+    margin: 0 !important;
+ }
+ .footer-bottom .container
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+ /* ---------------------------------- */
+/* Smoothness/Animation Additions Start */
+/* ---------------------------------- */
+
+/* General transitions for smooth hover effects on interactive elements */
+a,
+button,
+.nav-link,
+.feature-block,
+.product-card {
+    /* Apply transition to all animatable properties over 0.3 seconds with an ease-in-out curve */
+    transition: all 0.3s ease-in-out; 
+}
+
+/* Header/Navbar Smoothness */
+header {
+    /* Smooth transition for any changes in header like sticky effect or background change */
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav .navbar-nav>.nav-item a:hover {
+    color: var(--rdc-blue-primary) !important; /* Smooth color change on hover */
+}
+
+/* Button Smoothness */
+.btn-primary-rdc:hover {
+    /* Inherited transition from general rule, smoother button press feel */
+    background-color: #003a7a;
+    border-color: #003a7a;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+
+
+.btn-submit-inquiry:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+    color: #003a7a;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Block Smoothness (Glove/Microfiber sections) */
+.feature-block {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Initial soft shadow */
+}
+
+.feature-block:hover {
+    transform: translateY(-5px); /* Slight lift for smooth interaction */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+}
+
+
+
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Visible lift/shadow on hover */
+    transform: translateY(-5px); 
+}
+
+/* ---------------------------------- */
+/* Smoothness/Animation Additions End */
+/* ---------------------------------- */
+
+.about-blue-box{
+    background-color: var(--rdc-blue-primary);
+
+    margin-left: -100px; 
+    width:80%;
+}
+ 
