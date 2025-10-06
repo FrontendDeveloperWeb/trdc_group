@@ -384,5 +384,7 @@
     min-height: 160px;
 }
 
-
+.col-12.col-4.p-4.border-light.p-4 {
+    padding-top: 1px !important;
+}
 }
