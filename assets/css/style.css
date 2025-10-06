@@ -1,5 +1,86 @@
+ *  {
+    padding: 0;
+    margin: 0;
+ }
+ @font-face {
+       font-family: 'inter-medium'; 
+    
+   
+    src: url('../font/Inter-Medium.otf');
+    
+    
+}
+@font-face {
+   
+    font-family: 'inter-regular'; 
+    src: url('../font/Inter-Regular.otf');
+    
+    
+}
+@font-face {
+   
+    font-family: 'axiforma-medium'; 
+    src: url('../font/axiforma/Axiforma-Medium.ttf');
+    
+    
+}
+button{
+      font-family: 'axiforma-medium' !important;    
+}
+/* Headings: Use inter-medium */
+h1, h2, h3, h4, h5, h6,
+.section-heading,
+.hero-section h1,
+.about-section h3,
+.feature-block h6,
+.price-tag,
+.footer-contact-section h2,
+.footer-contact-section h3,
+.left-contact-block h2,
+.right-contact-form-block h3 {
+    font-family: 'inter-medium' !important;
+    /* !important for overriding existing properties, though not always needed */
+}
+
+
+/* Re-checking specific elements to ensure correct weight/family: */
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 500; /* Assuming you want bold look for headings */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    color: #002A67;
+    font-weight: 500 !important; /* Bold look for main hero heading */
+    line-height: 1.1;
+}
+
+/* Paragraphs and general text should use the body's font-family (inter-regular) */
+.hero-section p.lead,
+.section-subheading,
+.feature-block p,
+.product-info-text,
+.case-price-label,
+.left-contact-block p.lead,
+.left-contact-block p,
+.footer-bottom p {
+    font-family: 'inter-regular';
+    font-weight: 400; /* Ensure they stay regular */
+}
+
+
+
+/* ------------------------------------------------ */
+/* NO FONT CHANGES BELOW - All other styles remain the same */
+/* ------------------------------------------------ */
+
  body {
-     font-family: 'Open Sans', sans-serif;
+     font-family: 'inter-regular'; 
      /* Example font */
      color: #333;
  }
@@ -37,8 +118,23 @@
 
 
  nav .navbar-nav>.nav-item {
-     padding-left: 60px;
- }
+    margin-left: 25px !important;
+    padding: 9px 20px;
+    border-radius: 10px;
+    /* --- ADDED FOR SMOOTHNESS --- */
+    transition: background 0.3s ease-in-out;
+}
+nav .navbar-nav>.nav-item:hover {
+    background: #0052CC0D;
+}
+nav .navbar-nav>.nav-item:hover a {
+    color: rgba(0, 82, 204, 0.7);
+}
+nav .navbar-nav>.nav-item a {
+    /* --- ADDED FOR SMOOTHNESS --- */
+    /* Target the link color transition */
+    transition: color 0.3s ease-in-out;
+}
 
  nav .navbar-nav>.nav-item:last-child {
      padding-right: 30px;
@@ -491,9 +587,9 @@
  }
 
  .right-contact-form-block .form-control {
-     background-color: rgba(0 ,0, 0, 0.3);
+     background-color: rgba(0, 0, 0, 0.3);
      /* Halka transparent white background */
-    border: 1px solid #0052CC99;
+     border: 1px solid #0052CC99;
      /* Image mein halka border hai */
      color: white;
      /* Text color white */
@@ -570,99 +666,206 @@
          font-size: 1rem;
      }
  }
+
  .border-right {
-    border-left: 1px solid #fff;
-    padding-left: 20px;
+     border-left: 1px solid #fff;
+     padding-left: 20px;
  }
+
  .footer-bottom {
-    border-top:1px solid rgba(0, 0, 0, 0.2) ;
-    margin-top: 50px;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     margin-top: 50px;
  }
- .footer-bottom p{
-    font-size: 17px;
-    padding:0;
-    margin: 0 !important;
+
+ .footer-bottom p {
+     font-size: 17px;
+     padding: 0;
+     margin: 0 !important;
  }
- .footer-bottom .container
- {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+ .footer-bottom .container {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
  }
 
 
  /* ---------------------------------- */
-/* Smoothness/Animation Additions Start */
-/* ---------------------------------- */
+ /* Smoothness/Animation Additions Start */
+ /* ---------------------------------- */
 
-/* General transitions for smooth hover effects on interactive elements */
-a,
-button,
-.nav-link,
-.feature-block,
-.product-card {
-    /* Apply transition to all animatable properties over 0.3 seconds with an ease-in-out curve */
-    transition: all 0.3s ease-in-out; 
-}
+ /* General transitions for smooth hover effects on interactive elements */
+ a,
+ button,
+ .nav-link,
+ .feature-block,
+ .product-card {
+     /* Apply transition to all animatable properties over 0.3 seconds with an ease-in-out curve */
+     transition: all 0.3s ease-in-out;
+ }
 
-/* Header/Navbar Smoothness */
-header {
-    /* Smooth transition for any changes in header like sticky effect or background change */
-    transition: background-color 0.4s ease-in-out;
-}
-
-nav .navbar-nav>.nav-item a:hover {
-    color: var(--rdc-blue-primary) !important; /* Smooth color change on hover */
-}
-
-/* Button Smoothness */
-.btn-primary-rdc:hover {
-    /* Inherited transition from general rule, smoother button press feel */
-    background-color: #003a7a;
-    border-color: #003a7a;
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
-}
+ /* Header/Navbar Smoothness */
+ header {
+     /* Smooth transition for any changes in header like sticky effect or background change */
+     transition: background-color 0.4s ease-in-out;
+ }
 
 
 
-.btn-submit-inquiry:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.9);
-    color: #003a7a;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Feature Block Smoothness (Glove/Microfiber sections) */
-.feature-block {
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Initial soft shadow */
-}
-
-.feature-block:hover {
-    transform: translateY(-5px); /* Slight lift for smooth interaction */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
-}
+ /* Button Smoothness */
+ .btn-primary-rdc:hover {
+     /* Inherited transition from general rule, smoother button press feel */
+     background-color: #003a7a;
+     border-color: #003a7a;
+     transform: translateY(-2px);
+     /* Slight lift on hover */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+     /* Soft shadow for depth */
+ }
 
 
 
+ .btn-submit-inquiry:hover {
+     background-color: rgba(255, 255, 255, 0.9);
+     border-color: rgba(255, 255, 255, 0.9);
+     color: #003a7a;
+     transform: translateY(-1px);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
 
-.product-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Visible lift/shadow on hover */
-    transform: translateY(-5px); 
-}
+ /* Feature Block Smoothness (Glove/Microfiber sections) */
+ .feature-block {
+     padding: 20px;
+     border-radius: 8px;
+     background-color: #f8f9fa;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+     /* Initial soft shadow */
+ }
 
-/* ---------------------------------- */
-/* Smoothness/Animation Additions End */
-/* ---------------------------------- */
+ .feature-block:hover {
+     transform: translateY(-5px);
+     /* Slight lift for smooth interaction */
+     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+     /* Increased shadow for depth */
+ }
 
-.about-blue-box{
-    background-color: var(--rdc-blue-primary);
 
-    margin-left: -100px; 
-    width:80%;
-}
- 
+
+
+ .product-card:hover {
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+     /* Visible lift/shadow on hover */
+     transform: translateY(-5px);
+ }
+
+ /* ---------------------------------- */
+ /* Smoothness/Animation Additions End */
+ /* ---------------------------------- */
+
+ .about-blue-box {
+     background-color: var(--rdc-blue-primary);
+
+     margin-left: -100px;
+     width: 80%;
+ }
+
+ @media (max-width: 991.98px) {
+     #navbarNav {
+         display: none !important;
+     }
+ }
+
+ /* Styling for the custom drawer */
+ .mobile-drawer {
+     position: fixed;
+     top: 0;
+     right: -100%;
+     /* Start off-screen to the right */
+     width: 300px;
+     /* Width of the drawer */
+     max-width: 85%;
+     /* Max width for smaller phones */
+     height: 100%;
+     background-color: #ffffff;
+     /* White background */
+     z-index: 1050;
+     /* Above the navbar, below the modal backdrop */
+     transition: right 0.3s ease-in-out;
+     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .mobile-drawer.open {
+     right: 0;
+     /* Slide into view */
+ }
+
+ /* Overlay backdrop for the drawer */
+ .drawer-backdrop {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 1040;
+     display: none;
+ }
+
+ .drawer-backdrop.show {
+     display: block;
+ }
+
+ .drawer-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 15px;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #eee;
+ }
+
+ .drawer-nav {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     flex-grow: 1;
+ }
+
+ .drawer-nav-item a {
+     display: block;
+     padding: 12px 0;
+     font-size: 1.1rem;
+     color: #333;
+     /* Dark text */
+     text-decoration: none;
+     border-bottom: 1px solid #f8f9fa;
+ }
+
+ .drawer-nav-item a:hover {
+     color: #007bff;
+     /* Example hover color (adjust to your brand color) */
+ }
+
+ .drawer-nav-item:last-child a {
+     border-bottom: none;
+ }
+
+ .drawer-logo img {
+     height: 30px;
+ }
+
+ .btn-close-drawer {
+     background: transparent;
+     border: 0;
+     font-size: 1.5rem;
+     padding: 0;
+     color: #333;
+     opacity: 0.7;
+ }
+
+ .btn-close-drawer:hover {
+     opacity: 1;
+ }
