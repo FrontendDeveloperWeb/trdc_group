@@ -367,4 +367,25 @@
 .product-card .img-container div>img {
     object-fit: contain !important;
 }   
+.feature-block img {
+    width: 20px;
+}
+
+.feature-block h6 {
+    font-size: 12px;
+}
+
+.feature-block p {
+    font-size: 10px;
+}
+
+.feature-block {
+    padding: 10px 4px;
+    min-height: 160px;
+}
+
+.col-4.p-4.border-light {
+    padding: 12px !important;
+    height: auto !important;
+}
 }
