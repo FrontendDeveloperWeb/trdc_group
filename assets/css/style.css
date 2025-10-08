@@ -1,86 +1,99 @@
- *  {
-    padding: 0;
-    margin: 0;
+ * {
+     padding: 0;
+     margin: 0;
  }
+
  @font-face {
-       font-family: 'inter-medium'; 
-    
-   
-    src: url('../font/Inter-Medium.otf');
-    
-    
-}
-@font-face {
-   
-    font-family: 'inter-regular'; 
-    src: url('../font/Inter-Regular.otf');
-    
-    
-}
-@font-face {
-   
-    font-family: 'axiforma-medium'; 
-    src: url('../font/axiforma/Axiforma-Medium.ttf');
-    
-    
-}
-button{
-      font-family: 'axiforma-medium' !important;    
-}
-/* Headings: Use inter-medium */
-h1, h2, h3, h4, h5, h6,
-.section-heading,
-.hero-section h1,
-.about-section h3,
-.feature-block h6,
-.price-tag,
-.footer-contact-section h2,
-.footer-contact-section h3,
-.left-contact-block h2,
-.right-contact-form-block h3 {
-    font-family: 'inter-medium' !important;
-    /* !important for overriding existing properties, though not always needed */
-}
+     font-family: 'inter-medium';
 
 
-/* Re-checking specific elements to ensure correct weight/family: */
-
-.section-heading {
-    font-size: 2.5rem;
-    font-weight: 500; /* Assuming you want bold look for headings */
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.hero-section h1 {
-    font-size: 64px;
-    color: #002A67;
-    font-weight: 500 !important; /* Bold look for main hero heading */
-    line-height: 1.1;
-}
-
-/* Paragraphs and general text should use the body's font-family (inter-regular) */
-.hero-section p.lead,
-.section-subheading,
-.feature-block p,
-.product-info-text,
-.case-price-label,
-.left-contact-block p.lead,
-.left-contact-block p,
-.footer-bottom p {
-    font-family: 'inter-regular';
-    font-weight: 400; /* Ensure they stay regular */
-}
+     src: url('../font/Inter-Medium.otf');
 
 
+ }
 
-/* ------------------------------------------------ */
-/* NO FONT CHANGES BELOW - All other styles remain the same */
-/* ------------------------------------------------ */
+ @font-face {
+
+     font-family: 'inter-regular';
+     src: url('../font/Inter-Regular.otf');
+
+
+ }
+
+ @font-face {
+
+     font-family: 'axiforma-medium';
+     src: url('../font/axiforma/Axiforma-Medium.ttf');
+
+
+ }
+
+ button {
+     font-family: 'axiforma-medium' !important;
+ }
+
+ /* Headings: Use inter-medium */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ .section-heading,
+ .hero-section h1,
+ .about-section h3,
+ .feature-block h6,
+ .price-tag,
+ .footer-contact-section h2,
+ .footer-contact-section h3,
+ .left-contact-block h2,
+ .right-contact-form-block h3 {
+     font-family: 'inter-medium' !important;
+     /* !important for overriding existing properties, though not always needed */
+ }
+
+
+ /* Re-checking specific elements to ensure correct weight/family: */
+
+ .section-heading {
+     font-size: 2.5rem;
+     font-weight: 500;
+     /* Assuming you want bold look for headings */
+     text-align: center;
+     margin-bottom: 20px;
+     color: #333;
+ }
+
+ .hero-section h1 {
+     font-size: 64px;
+     color: #002A67;
+     font-weight: 500 !important;
+     /* Bold look for main hero heading */
+     line-height: 1.1;
+ }
+
+ /* Paragraphs and general text should use the body's font-family (inter-regular) */
+ .hero-section p.lead,
+ .section-subheading,
+ .feature-block p,
+ .product-info-text,
+ .case-price-label,
+ .left-contact-block p.lead,
+ .left-contact-block p,
+ .footer-bottom p {
+     font-family: 'inter-regular';
+     font-weight: 400;
+     /* Ensure they stay regular */
+ }
+
+
+
+ /* ------------------------------------------------ */
+ /* NO FONT CHANGES BELOW - All other styles remain the same */
+ /* ------------------------------------------------ */
 
  body {
-     font-family: 'inter-regular'; 
+     font-family: 'inter-regular';
      /* Example font */
      color: #333;
  }
@@ -96,7 +109,7 @@ h1, h2, h3, h4, h5, h6,
      /* Example blue */
  }
 
- header {
+ /* header {
      position: absolute;
      width: 90%;
      z-index: 1;
@@ -106,8 +119,35 @@ h1, h2, h3, h4, h5, h6,
      left: 0;
      right: 0;
      margin: 20px auto;
+ } */
+ header {
+    
+     width: 97%;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 10px;
+     backdrop-filter: blur(10px);
+
+     box-shadow: 0px 10px 34px 0px #0000000D;
+
+     left: 0;
+     right: 0;
+     margin: 20px auto;
+     text-align: center;
+     /* display: flex;
+  align-items: center;
+  justify-content: center; */
+     position: fixed;
+     /* width: 100%; */
+     left: 0;
+     top: 0;
+     transition: ease 0.4s;
+     z-index: 999;
  }
 
+
+ .scrollable-area {
+     height: 200vh;
+ }
 
  nav .navbar-nav>.nav-item a {
      padding: 0 !important;
@@ -118,23 +158,26 @@ h1, h2, h3, h4, h5, h6,
 
 
  nav .navbar-nav>.nav-item {
-    margin-left: 25px !important;
-    padding: 9px 20px;
-    border-radius: 10px;
-    /* --- ADDED FOR SMOOTHNESS --- */
-    transition: background 0.3s ease-in-out;
-}
-nav .navbar-nav>.nav-item:hover {
-    background: #0052CC0D;
-}
-nav .navbar-nav>.nav-item:hover a {
-    color: rgba(0, 82, 204, 0.7);
-}
-nav .navbar-nav>.nav-item a {
-    /* --- ADDED FOR SMOOTHNESS --- */
-    /* Target the link color transition */
-    transition: color 0.3s ease-in-out;
-}
+     margin-left: 25px !important;
+     padding: 9px 20px;
+     border-radius: 10px;
+     /* --- ADDED FOR SMOOTHNESS --- */
+     transition: background 0.3s ease-in-out;
+ }
+
+ nav .navbar-nav>.nav-item:hover {
+     background: #0052CC0D;
+ }
+
+ nav .navbar-nav>.nav-item:hover a {
+     color: rgba(0, 82, 204, 0.7);
+ }
+
+ nav .navbar-nav>.nav-item a {
+     /* --- ADDED FOR SMOOTHNESS --- */
+     /* Target the link color transition */
+     transition: color 0.3s ease-in-out;
+ }
 
  nav .navbar-nav>.nav-item:last-child {
      padding-right: 30px;
