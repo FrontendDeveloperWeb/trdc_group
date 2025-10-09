@@ -122,7 +122,7 @@
  } */
  header {
     
-     width: 97%;
+     width: 90%;
      background-color: rgba(255, 255, 255, 0.8);
      border-radius: 10px;
      backdrop-filter: blur(10px);
@@ -912,3 +912,15 @@
  .btn-close-drawer:hover {
      opacity: 1;
  }
+
+ .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    min-height: 584px;
+}

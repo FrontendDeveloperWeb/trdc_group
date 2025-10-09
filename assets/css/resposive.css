@@ -161,6 +161,12 @@
     .footer-bottom p {
         font-size: 14px;
     }
+
+    .swiper {
+
+
+        min-height: 480px !important;
+    }
 }
 
 @media (max-width: 991px) {
@@ -230,6 +236,22 @@
         margin-left: 0;
         width: 100%;
     }
+
+    .swiper {
+
+
+        min-height: 480px !important;
+    }
+     header {
+        padding: 0 20px 0 0;
+    }
+
+    header img {
+        width: 90px;
+    }
+    .hero-section {
+    height: 60vh;
+}
 }
 
 @media (max-width: 767px) {
@@ -291,6 +313,17 @@
     .hero-section {
         height: 85vh;
     }
+
+    header {
+        padding: 0 10px 0 0;
+    }
+
+    header img {
+        width: 80px;
+    }
+       .hero-section {
+    height: 50vh;
+}
 }
 
 @media (max-width: 576px) {
@@ -321,12 +354,16 @@
 
     header {
         position: relative;
-        margin: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 94%;
+    }
+
+    header img {
+        width: 80px;
     }
 
     .hero-section {
-        height: 68vh;
+        height: 50vh;
     }
 
 
@@ -356,35 +393,44 @@
     .left-contact-block i {
         font-size: 15px !important;
     }
-        .left-contact-block {
+
+    .left-contact-block {
         padding: 20px 21px !important;
     }
+
     .product-card .img-container {
-    height: 165px;
-    object-fit: contain;
-}
+        height: 165px;
+        object-fit: contain;
+    }
 
-.product-card .img-container div>img {
-    object-fit: contain !important;
-}   
-.feature-block img {
-    width: 20px;
-}
+    .product-card .img-container div>img {
+        object-fit: contain !important;
+    }
 
-.feature-block h6 {
-    font-size: 12px;
-}
+    .feature-block img {
+        width: 20px;
+    }
 
-.feature-block p {
-    font-size: 10px;
-}
+    .feature-block h6 {
+        font-size: 12px;
+    }
 
-.feature-block {
-    padding: 10px 4px;
-    min-height: 160px;
-}
+    .feature-block p {
+        font-size: 10px;
+    }
 
-.col-12.col-4.p-4.border-light.p-4 {
-    padding-top: 1px !important;
-} 
+    .feature-block {
+        padding: 10px 4px;
+        min-height: 160px;
+    }
+
+    .col-12.col-4.p-4.border-light.p-4 {
+        padding-top: 1px !important;
+    }
+
+    .swiper {
+
+
+        min-height: 350px !important;
+    }
 }
