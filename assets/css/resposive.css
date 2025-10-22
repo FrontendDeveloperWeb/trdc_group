@@ -399,12 +399,13 @@
     }
 
     .product-card .img-container {
-        height: 165px;
+        height: 231px;
         object-fit: contain;
     }
 
     .product-card .img-container div>img {
         object-fit: contain !important;
+        height: 176px;
     }
 
     .feature-block img {
